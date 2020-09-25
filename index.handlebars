@@ -1,0 +1,11 @@
+{{! use double curly braces for a handle bar variable}}
+<h1>{{title}}</h1>
+
+{{! we want to loop through and display our current members in our array, 
+To make a forloop in handlebars template, use the #each}}
+
+<ul>
+    {{#each members}}
+    <li>{{this.name}}: {{this.email}}</li>
+    {{/each}}
+</ul>
